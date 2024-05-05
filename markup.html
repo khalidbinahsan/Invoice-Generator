@@ -1,0 +1,127 @@
+<div class="container max-w-[600px] py-5 px-5 my-5 mx-auto rounded border-2 border-inherit md:max-w-[800px] lg:max-w-[1000px]">
+    <form>
+        <div class="flex flex-col justify-between gap-8 lg:flex-row-reverse mb-2">
+            <div class="flex flex-col justify-between basis-1/2">
+                <div class="flex flex-col lg:items-end">
+                    <input type="text" class="text-gray-900 rounded-lg outline-none placeholder-gray-600 block w-full p-2.5 text-3xl md:text-3.5xl lg:text-4xl font-semibold mb-2 lg:text-end" value="INVOICE">
+                    <div class="flex">
+                        <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 rounded-s-md">#</span>
+                        <input type="text" class="rounded-none rounded-e-lg w-26 bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 text-sm border-gray-300 p-2.5 outline-none">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1 mt-5">
+                   <div class="flex justify-end">
+                    <input type="text"
+                            class="focus:bg-gray-50 focus:border  text-gray-900 text-sm rounded-lg placeholder-gray-600 focus:placeholder-gray-500 outline-none focus:border-blue-500 p-2.5 text-end" value="Date">
+                            <input type="date"
+                            class="w-40 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg placeholder-gray-600 focus:placeholder-gray-500 outline-none focus:border-blue-500  px-2">
+                   </div> 
+                   <div class="flex justify-end">
+                    <input type="text"
+                            class="focus:bg-gray-50 focus:border  text-gray-900 text-sm rounded-lg placeholder-gray-600 focus:placeholder-gray-500 outline-none focus:border-blue-500 p-2.5 text-end" value="Date">
+                            <input type="text"
+                            class="w-40 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg placeholder-gray-600 focus:placeholder-gray-500 outline-none focus:border-blue-500  px-2">
+                   </div> 
+                   <div class="flex justify-end">
+                    <input type="text"
+                            class="focus:bg-gray-50 focus:border  text-gray-900 text-sm rounded-lg placeholder-gray-600 focus:placeholder-gray-500 outline-none focus:border-blue-500 p-2.5 text-end" value="Date">
+                            <input type="text"
+                            class="w-40 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg placeholder-gray-600 focus:placeholder-gray-500 outline-none focus:border-blue-500  px-2">
+                   </div> 
+                   <div class="flex justify-end">
+                    <input type="text"
+                            class="focus:bg-gray-50 focus:border  text-gray-900 text-sm rounded-lg placeholder-gray-600 focus:placeholder-gray-500 outline-none focus:border-blue-500 p-2.5 text-end" value="Date">
+                            <input type="text"
+                            class="w-40 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg placeholder-gray-600 focus:placeholder-gray-500 outline-none focus:border-blue-500  px-2">
+                   </div> 
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 basis-1/2 lg:justify-between">
+                <div class="flex flex-col gap-5">
+                <input type="file" placeholder="+ Add your logo">
+                <textarea class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg placeholder-gray-600 outline-none focus:placeholder-gray-500 focus:border-blue-500 p-2.5" placeholder="Who is the invoice from? (required)"></textarea>
+                </div>
+                <div class="flex flex-col gap-5 md:flex-row">
+                    <div class="basis-1/2">
+                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="bill-to">Bill to</label>
+                        <textarea class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg placeholder-gray-600 focus:placeholder-gray-500 outline-none focus:border-blue-500 block w-full p-2.5" id="bill-to" placeholder="Who is the invoice to? (required)"></textarea>
+                    </div>
+                    <div class="basis-1/2">
+                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="ship-to">Ship to</label>
+                        <textarea type="text"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg placeholder-gray-600 outline-none focus:placeholder-gray-500 focus:border-blue-500 block w-full p-2.5" id="ship-to" placeholder="(optional)"></textarea>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="hidden md:flex mt-7 mb-0 px-3 py-1 rounded justify-between text-white bg-neutral-950">
+          <div class="md:w-3/5">Item</div>
+          <div class="flex">
+            <div class="w-32 px-2 text-start">Quantity</div>
+            <div class="w-32 px-3 text-start">Rate</div>
+            <div class="w-20 text-end">Amount</div>
+          </div>
+        </div>
+        <div class="parent relative">
+            <span class="absolute hidden child right-2 p-2 cursor-pointer hover:text-orange-700 md:-right-2 md:top-0.5">x</span>
+            <div class="flex flex-col border rounded-lg p-4 md:p-0 md:flex-row-reverse md:justify-between md:border-0">
+                <div class="md:flex md:flex-row-reverse md:items-center">
+               <div class="md:w-20 md:text-end md:pr-3"><span class="md:hidden">Amount: </span>$0.00</div>
+               <div class="mt-2 flex md:gap-2">
+                <div class="flex gap-2 w-32 px-2 py-1 rounded-lg border border-red-300 items-center md:p-2"><span>$</span><input class="outline-none w-24" type="number"></div>
+                <div class="mx-3 md:hidden">x</div>
+                <div class="border w-32 rounded-lg border-red-300 py-1 md:p-2"><input class="outline-none px-1 w-24" placeholder="Quantity" type="number"></div>
+               </div>
+            </div>
+               <div class="mt-2 md:w-3/5"><input class="outline-none p-2 border focus:border-blue-500  rounded-lg w-full" placeholder="Describe service or product..." type="text"></div>
+            </div>
+            <button class="bg-blue-700 mt-2 rounded py-1.5 px-5 text-white">+ Add item</button>
+        </div>
+        <div class="mt-10 flex flex-col md:flex-row">
+            <div class="basis-1/2">
+                <input type="text" class="rounded-lg outline-none focus:border py-1 px-2 mb-2" value="Notes">
+                <textarea class="w-full border py-1 px-2 rounded-lg outline-none focus:border-blue-500" placeholder="Notes- any relevant information not already covered"></textarea>
+                <input type="text" class="rounded-lg outline-none focus:border py-1 px-2 mb-2" value="Terms">
+                <textarea class="w-full border py-1 px-2 rounded-lg outline-none focus:border-blue-500" placeholder="Terms and conditions - late fees, payment methods, delivery schedule"></textarea>
+            </div>
+            <div class="basis-1/2 flex flex-col mt-10 pr-5">
+                <div class="flex justify-end gap-2">
+                    <input type="text" class="rounded-lg outline-none focus:border py-1 px-2 mb-2 text-end" value="Subtotal">
+                    <span class="w-24 text-end">$0.00</span>
+                </div>
+                <div class="flex justify-end gap-2 parent relative">
+                    <span class="absolute hidden child -right-5 top-[-5px] p-2 cursor-pointer hover:text-orange-700 md:-right-6">x</span>
+                    <input type="text" class="rounded-lg outline-none focus:border py-1 px-2 mb-2 text-end" value="Discount">
+                    <input type="number" class="rounded-lg outline-none border py-1 px-2 mb-2 w-24" value="0">
+                </div>
+                <div class="flex justify-end gap-6 my-2">
+                    <button class="text-green-600 font-bold">+ Discount</button>
+                    <button class="text-green-600 font-bold">+ Tax</button>
+                    <button class="text-green-600 font-bold">+ Shipping</button>
+
+                </div>
+                <div class="flex justify-end gap-2">
+                    <input type="text" class="rounded-lg outline-none focus:border py-1 px-2 mb-2 text-end" value="Total">
+                    <span class="w-24 text-end">$0.00</span>
+                </div>
+                <div class="flex justify-end gap-2">
+                    <input type="text" class="rounded-lg outline-none focus:border py-1 px-2 mb-2 text-end" value="Amount Paid">
+                    <input type="number" class="rounded-lg outline-none border py-1 px-2 mb-2 w-24" value="0">
+                </div>
+                <div class="flex justify-end gap-2">
+                    <input type="text" class="rounded-lg outline-none focus:border py-1 px-2 mb-2 text-end" value="Balance Due">
+                    <span class="w-24 text-end">$0.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-end gap-3">
+            <button class="bg-green-700 flex mt-2 rounded py-1.5 px-5 text-white"> Download Invoice</button>
+            <button class="bg-red-700 mt-2 rounded py-1.5 px-5 text-white">Reset</button>
+        </div>
+    </form>
+</div>
+<style>
+    .parent:hover .child{
+    display: block;
+}
+</style>
