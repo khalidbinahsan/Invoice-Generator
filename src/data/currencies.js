@@ -25,7 +25,7 @@
     "BAM": {"name": "Bosnia-Herzegovina Convertible Mark", "symbol": "BAM"},
     "BAN": {"name": "Bosnia-Herzegovina New Dinar (1994–1997)", "symbol": "BAN"},
     "BBD": {"name": "Barbadian Dollar", "symbol": "BBD"},
-    "BDT": {"name": "Bangladeshi Taka", "symbol": "BDT"},
+    "BDT": {"name": "Bangladeshi Taka", "symbol": "৳"},
     "BEC": {"name": "Belgian Franc (convertible)", "symbol": "BEC"},
     "BEF": {"name": "Belgian Franc", "symbol": "BEF"},
     "BEL": {"name": "Belgian Franc (financial)", "symbol": "BEL"},

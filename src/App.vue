@@ -24,7 +24,7 @@ const invoiceData = reactive({
           } 
         },
     from: '',
-    currency: '$',
+    currency: '৳',
     billTo: '',
     shipTo: '',
     items: [{
